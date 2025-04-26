@@ -152,7 +152,7 @@ input
 input:invalid
 {
     outline: none;
-    border: 2px solid red;
+    border: 2px solid #FF000099;
 }
 
 input:focus
