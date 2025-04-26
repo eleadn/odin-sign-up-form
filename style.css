@@ -4,6 +4,11 @@
     src: url("./assets/Norse-Bold.otf");
 }
 
+:root
+{
+    --right-margin: 100px;
+}
+
 * 
 {
     margin: 0;
@@ -23,22 +28,27 @@ body
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 4;
 }
 
 .right
 {
-    flex: 5;
+    background-color: whitesmoke;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px
 }
 
 .logo
 {
     width: 100%;
     padding: 15px 0px;
-    margin-top: 30%;
+    margin-top: 200px;
     background-color: #00000055;
     flex: 0;
     display: flex;
@@ -67,4 +77,87 @@ body
 .credit
 {
     color: whitesmoke;
+}
+
+form
+{
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 5px 5px 10px lightgrey;
+}
+
+.row
+{
+    display: flex;
+    gap: 50px;
+}
+
+.field
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.text
+{
+    font-size: 30px;
+    margin: 0 var(--right-margin);
+}
+
+.register
+{
+    border-radius: 10px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    max-width: fit-content;
+    margin: 0 var(--right-margin);
+}
+
+.log-in
+{
+    margin: 0 var(--right-margin);
+}
+
+.log-in-link
+{
+    text-decoration: none;
+    color: #596D48;
+}
+
+form > *
+{
+    margin: 0 var(--right-margin);
+}
+
+label
+{
+    font-size: 12px;
+}
+
+input
+{
+    border: solid #E5E7EB;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+input:invalid
+{
+    outline: none;
+    border: 2px solid red;
+}
+
+input:focus
+{
+    outline: none;
+    border: 2px solid #0000FF99;
+    box-shadow: 2px 2px 5px grey;
 }
